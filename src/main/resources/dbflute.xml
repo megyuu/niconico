@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//DBFLUTE//DTD LastaDi 1.0//EN" 
+	"http://dbflute.org/meta/lastadi10.dtd">
+<components namespace="dbflute">
+	<include condition="#exists('#path')" path="my_included_dbflute.xml"/>
+	<include path="rdb.xml"/>
+
+	<!-- The components of DBFlute Runtime. -->
+	<component name="introduction" class="com.niconico.dbflute.allcommon.DBFluteInitializer"/>
+	<component name="invokerAssistant" class="com.niconico.dbflute.allcommon.ImplementedInvokerAssistant"/>
+	<component name="behaviorCommandInvoker" class="org.dbflute.bhv.core.BehaviorCommandInvoker"/>
+	<component name="behaviorSelector" class="com.niconico.dbflute.allcommon.ImplementedBehaviorSelector"/>
+	<component name="commonColumnAutoSetupper" class="com.niconico.dbflute.allcommon.ImplementedCommonColumnAutoSetupper"/>
+
+	<!-- The components of Behavior. -->
+	<component name="memberBhv" class="com.niconico.dbflute.exbhv.MemberBhv"/>
+	<component name="memberAddressBhv" class="com.niconico.dbflute.exbhv.MemberAddressBhv"/>
+	<component name="memberFollowingBhv" class="com.niconico.dbflute.exbhv.MemberFollowingBhv"/>
+	<component name="memberLoginBhv" class="com.niconico.dbflute.exbhv.MemberLoginBhv"/>
+	<component name="memberSecurityBhv" class="com.niconico.dbflute.exbhv.MemberSecurityBhv"/>
+	<component name="memberServiceBhv" class="com.niconico.dbflute.exbhv.MemberServiceBhv"/>
+	<component name="memberStatusBhv" class="com.niconico.dbflute.exbhv.MemberStatusBhv"/>
+	<component name="memberWithdrawalBhv" class="com.niconico.dbflute.exbhv.MemberWithdrawalBhv"/>
+	<component name="productBhv" class="com.niconico.dbflute.exbhv.ProductBhv"/>
+	<component name="productCategoryBhv" class="com.niconico.dbflute.exbhv.ProductCategoryBhv"/>
+	<component name="productStatusBhv" class="com.niconico.dbflute.exbhv.ProductStatusBhv"/>
+	<component name="purchaseBhv" class="com.niconico.dbflute.exbhv.PurchaseBhv"/>
+	<component name="purchasePaymentBhv" class="com.niconico.dbflute.exbhv.PurchasePaymentBhv"/>
+	<component name="regionBhv" class="com.niconico.dbflute.exbhv.RegionBhv"/>
+	<component name="serviceRankBhv" class="com.niconico.dbflute.exbhv.ServiceRankBhv"/>
+	<component name="withdrawalReasonBhv" class="com.niconico.dbflute.exbhv.WithdrawalReasonBhv"/>
+</components>
